@@ -10,41 +10,47 @@
             margin: 0; padding: 0; background-color: #ffffff; color: #1a1a1a;
         }
         header {
-            background: #3C0008; /* Updated Deep Maroon from your image */
-            color: #ffffff; /* White Text */
-            padding: 60px 20px; text-align: center;
-            border-bottom: 5px solid #200004; /* Even darker border */
+            background: #3C0008; /* Your Deep Maroon */
+            padding: 50px 20px; text-align: center;
+            border-bottom: 5px solid #200004;
         }
         
-        /* Place holder styling for your logo - use this class for your img tag later */
-        .logo { max-width: 150px; margin-bottom: 10px; display: block; margin-left: auto; margin-right: auto; }
-        
-        h1 { font-size: 50px; letter-spacing: 10px; margin: 0; text-transform: uppercase; font-weight: 900; }
-        .tagline { font-size: 14px; margin-top: 10px; letter-spacing: 3px; opacity: 0.9; }
-        .container { max-width: 1000px; margin: auto; padding: 40px 20px; display: grid; grid-template-columns: 1fr; gap: 20px; }
+        /* This makes your logo a perfect circle and hides the white background */
+        .logo-img {
+            width: 160px; 
+            height: 160px;
+            object-fit: cover;
+            border-radius: 50%; 
+            border: 3px solid #ffffff; 
+            display: block;
+            margin: 0 auto;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        }
+
+        .tagline { font-size: 12px; margin-top: 20px; letter-spacing: 4px; color: #ffffff; opacity: 0.8; text-transform: uppercase; font-weight: 300; }
+        .container { max-width: 1000px; margin: auto; padding: 40px 20px; display: grid; grid-template-columns: 1fr; gap: 25px; }
         @media (min-width: 600px) { .container { grid-template-columns: 1fr 1fr; } }
-        .product-card { border: 1px solid #eee; border-radius: 8px; overflow: hidden; background: #fff; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
-        .product-image { background: #fdfdfd; height: 350px; display: flex; align-items: center; justify-content: center; color: #bbb; border-bottom: 1px solid #eee; font-weight: bold; font-size: 12px; }
-        .product-info { padding: 30px; }
-        .price { font-size: 24px; font-weight: bold; color: #3C0008; margin: 15px 0; }
-        .btn { display: block; background: #3C0008; color: white; padding: 15px; text-decoration: none; border-radius: 4px; font-weight: bold; text-transform: uppercase; transition: 0.3s; font-size: 14px; }
-        .btn:hover { background: #200004; }
+        .product-card { border: 1px solid #eee; border-radius: 12px; overflow: hidden; background: #fff; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+        .product-image { background: #fdfdfd; height: 350px; display: flex; align-items: center; justify-content: center; color: #bbb; border-bottom: 1px solid #eee; font-weight: bold; font-size: 11px; text-transform: uppercase; }
+        .product-info { padding: 25px; }
+        .price { font-size: 22px; font-weight: bold; color: #3C0008; margin: 10px 0; }
+        .btn { display: block; background: #3C0008; color: white; padding: 15px; text-decoration: none; border-radius: 6px; font-weight: bold; text-transform: uppercase; transition: 0.3s; font-size: 13px; }
     </style>
 </head>
 <body>
     <header>
-        <h1>ALIF</h1>
-        <div class="tagline">THE BEGINNING OF MODERN STYLE</div>
+        <img src="logo.jpg" alt="ALIF Logo" class="logo-img">
+        <div class="tagline">The Beginning of Modern Style</div>
     </header>
     <div class="container">
         <div class="product-card">
-            <div class="product-image">PRODUCT PHOTO COMING SOON</div>
+            <div class="product-image">Product Photo 01 Coming Soon</div>
             <div class="product-info">
-                <h2>ESSENTIAL OVERSIZED TEE</h2>
+                <h2>ESSENTIAL TEE</h2>
                 <p class="price">PKR 2,500</p>
-                <a href="https://wa.me/923179013939?text=Hello%20ALIF!%20I%20would%20like%20to%20order%20the%20Essential%20Oversized%20Tee." class="btn">Order via WhatsApp</a>
+                <a href="https://wa.me/923179013939?text=Hello%20ALIF!%20I%20want%20to%20order%20the%20Essential%20Tee." class="btn">Order via WhatsApp</a>
             </div>
         </div>
-        </div>
+    </div>
 </body>
 </html>
