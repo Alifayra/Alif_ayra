@@ -10,33 +10,25 @@
             margin: 0; padding: 0; background-color: #ffffff; color: #1a1a1a;
         }
         header {
-            background: #800000; /* Deep Maroon */
+            background: #3C0008; /* Updated Deep Maroon from your image */
             color: #ffffff; /* White Text */
             padding: 60px 20px; text-align: center;
-            border-bottom: 5px solid #4d0000;
+            border-bottom: 5px solid #200004; /* Even darker border */
         }
+        
+        /* Place holder styling for your logo - use this class for your img tag later */
+        .logo { max-width: 150px; margin-bottom: 10px; display: block; margin-left: auto; margin-right: auto; }
+        
         h1 { font-size: 50px; letter-spacing: 10px; margin: 0; text-transform: uppercase; font-weight: 900; }
         .tagline { font-size: 14px; margin-top: 10px; letter-spacing: 3px; opacity: 0.9; }
-        .container { max-width: 600px; margin: auto; padding: 40px 20px; }
-        .product-card {
-            border: 1px solid #eee; border-radius: 8px;
-            margin-bottom: 40px; overflow: hidden; background: #fff;
-            text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-        }
-        .product-image {
-            background: #fdfdfd; height: 350px; display: flex;
-            align-items: center; justify-content: center; color: #bbb;
-            border-bottom: 1px solid #eee; font-weight: bold; font-size: 12px;
-        }
+        .container { max-width: 1000px; margin: auto; padding: 40px 20px; display: grid; grid-template-columns: 1fr; gap: 20px; }
+        @media (min-width: 600px) { .container { grid-template-columns: 1fr 1fr; } }
+        .product-card { border: 1px solid #eee; border-radius: 8px; overflow: hidden; background: #fff; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+        .product-image { background: #fdfdfd; height: 350px; display: flex; align-items: center; justify-content: center; color: #bbb; border-bottom: 1px solid #eee; font-weight: bold; font-size: 12px; }
         .product-info { padding: 30px; }
-        .price { font-size: 24px; font-weight: bold; color: #800000; margin: 15px 0; }
-        .btn {
-            display: block; background: #800000; color: white;
-            padding: 15px; text-decoration: none; border-radius: 4px;
-            font-weight: bold; text-transform: uppercase; transition: 0.3s;
-            font-size: 14px;
-        }
-        .btn:hover { background: #4d0000; }
+        .price { font-size: 24px; font-weight: bold; color: #3C0008; margin: 15px 0; }
+        .btn { display: block; background: #3C0008; color: white; padding: 15px; text-decoration: none; border-radius: 4px; font-weight: bold; text-transform: uppercase; transition: 0.3s; font-size: 14px; }
+        .btn:hover { background: #200004; }
     </style>
 </head>
 <body>
@@ -53,6 +45,6 @@
                 <a href="https://wa.me/923179013939?text=Hello%20ALIF!%20I%20would%20like%20to%20order%20the%20Essential%20Oversized%20Tee." class="btn">Order via WhatsApp</a>
             </div>
         </div>
-    </div>
+        </div>
 </body>
 </html>
